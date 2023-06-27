@@ -93,6 +93,7 @@ const App = ({ signOut }) => {
   ))}
 
   return (
+    
     <View className="App">
       <Heading level={1}>My Notes App</Heading>
       <View as="form" margin="3rem 0" onSubmit={createNote}>
@@ -137,14 +138,14 @@ const App = ({ signOut }) => {
           </Flex>
         ))}
       </View>
-      <Button onClick={signOut}>Sign Out</Button>
-    </View>
-    <View
+      <View
       name="image"
       as="input"
       type="file"
       style={{ alignSelf: "end" }}
     />
+      <Button onClick={signOut}>Sign Out</Button>
+    </View>
   );
 };
 
